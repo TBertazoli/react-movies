@@ -1,4 +1,4 @@
-import { userState } from "react";
+import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import ActorListPage from "../ActorListPage/ActorListPage";
@@ -8,7 +8,7 @@ import MoviesListPage from "../MoviesListPage/MoviesListPage";
 import NavBar from "../../components/NavBar/NavBar";
 
 export default function App() {
-  const [user, setUser] = userState(null);
+  const [user, setUser] = useState("tatiana");
 
   return (
     <main className="App">
