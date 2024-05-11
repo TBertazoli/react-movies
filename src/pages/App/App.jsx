@@ -6,6 +6,7 @@ import LoginPage from "../LoginPage/LoginPage";
 import MovieDetailPage from "../MovieDetailPage/MovieDetailPage";
 import MoviesListPage from "../MoviesListPage/MoviesListPage";
 import NavBar from "../../components/NavBar/NavBar";
+import { movies } from "../../data";
 
 export default function App() {
   const [user, setUser] = useState("tatiana");
