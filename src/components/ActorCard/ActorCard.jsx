@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
 
-export default function ActorCard({ actor }) {
+export default function ActorCard({ actor, index }) {
   return (
     <Link to={`/actors/${actor}`}>
       <div style={{ display: "flex" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)" }}>
+        <div>
+          {/* <img src="https://picsum.photos/200/300?random=1" alt="actor" /> */}
           <div
             style={{
-              backgroundImage: `url(https://picsum.photos/200/300?random=1)`,
-              backgroundPosition: "top",
+              backgroundImage: `url(https://picsum.photos/200/300?random=${index})`,
+              backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
               height: "30vh",
               width: "30vw",

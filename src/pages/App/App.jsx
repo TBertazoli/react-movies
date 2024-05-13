@@ -16,6 +16,7 @@ export default function App() {
     <main className="App">
       {user ? (
         <>
+          <h1>Welcome, {user}!</h1>
           <NavBar />
           <Routes>
             <Route path="/" element={<MoviesListPage movies={movies} />} />

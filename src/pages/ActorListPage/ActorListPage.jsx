@@ -8,9 +8,9 @@ export default function ActorListPage() {
   actorList = Array.from(actorList);
 
   return (
-    <div>
-      {actorList.map((actor) => (
-        <ActorCard actor={actor} key={actor} />
+    <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)" }}>
+      {actorList.map((actor, i) => (
+        <ActorCard actor={actor} key={actor} index={i} />
       ))}
     </div>
   );
