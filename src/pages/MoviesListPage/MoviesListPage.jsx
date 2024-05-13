@@ -1,11 +1,10 @@
 import MovieCard from "../../components/MovieCard/MovieCard";
-import { movies } from "../../data";
 
-export default function MoviesListPage() {
+export default function MoviesListPage({ movies }) {
   return (
     <div>
       {movies.map((movie) => (
-        <MovieCard movie={movie} key={movie.id} />
+        <MovieCard movie={movie} key={movie.title} />
       ))}
     </div>
   );
