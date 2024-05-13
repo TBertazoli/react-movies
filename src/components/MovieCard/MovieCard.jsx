@@ -12,7 +12,7 @@ export default function MovieCard({ movie }) {
       <div
         style={{
           backgroundImage: `url(${movie.posterPath})`,
-          backgroundPosition: "top",
+          backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           height: "30vh",
           width: "30vw",
