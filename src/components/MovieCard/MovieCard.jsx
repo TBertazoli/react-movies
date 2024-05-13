@@ -6,6 +6,7 @@ export default function MovieCard({ movie }) {
       to={{
         pathname: `/movies/${movie.title}`,
       }}
+      style={{ textDecoration: "none", color: "black" }}
     >
       ,
       <div
@@ -18,6 +19,7 @@ export default function MovieCard({ movie }) {
           border: "0.5px  solid rgba(150, 150, 150, 0.5)",
           margin: "1vh",
           borderRadius: "5px",
+          backgroundSize: "cover",
         }}
       >
         <div
