@@ -6,10 +6,10 @@ export default function MovieDetailPage() {
   const movieDetail = movies.find((movie) => movie.title === movieName);
 
   return (
-    <div>
-      <div>
-        <h1 className="MovieDetailPage">{movieDetail.title}</h1>
-        <h4>Release: {movieDetail.releaseDate}</h4>
+    <div className="d-flex justify-content-between m-5">
+      <div className="text-start">
+        <h1>{movieDetail.title}</h1>
+        <h4>Released: {movieDetail.releaseDate}</h4>
         <h3>Cast Members:</h3>
         <ul>
           {movieDetail.cast.map((actor) => (

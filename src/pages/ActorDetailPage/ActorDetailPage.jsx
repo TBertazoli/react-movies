@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { movies } from "../../data";
+import MovieCard from "../../components/MovieCard/MovieCard";
 
 export default function ActorDetailPage() {
   let { actor } = useParams();
@@ -7,12 +8,9 @@ export default function ActorDetailPage() {
   console.log(actorDetail);
 
   return (
-    <div>
+    <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)" }}>
       {actorDetail.map((movie) => (
-        <div>
-          <h1>{movie.title}</h1>
-          <img src={movie.posterPath} alt={movie.title} />
-        </div>
+        <MovieCard movie={movie} key={movie.title} />
       ))}
     </div>
   );
