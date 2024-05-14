@@ -10,7 +10,7 @@ import ActorDetailPage from "../ActorDetailPage/ActorDetailPage";
 import { movies } from "../../data";
 
 export default function App() {
-  const [user, setUser] = useState("tatiana");
+  const [user, setUser] = useState("");
 
   return (
     <main className="App">
